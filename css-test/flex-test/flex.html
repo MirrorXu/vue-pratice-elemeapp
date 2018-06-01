@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <style>
+    #app{
+      display: flex;
+      background: salmon;
+      flex-direction: row;
+      /*justify-content: center;*/
+      justify-content: center;
+      align-content: flex-end;
+      flex-wrap: wrap;
+      align-items: center;
+      /*height: 100px;*/
+    }
+    #app > div{
+      background: yellow;
+      text-align: center;
+      text-wrap: normal;
+      padding: 10px;
+      background-clip: content-box;
+      border: 1px solid wheat;
+      flex-grow: 1;
+    }
+    #app > div:first-child{
+      height: 50px;
+    }
+  </style>
+
+  <style>
+    .box{
+      width: 90px;
+      height: 90px;
+      box-sizing: content-box;
+      background: #dedede;
+      padding: 5px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    .item{
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+      background: #000;
+      background-clip: content-box;
+      padding: 5px;
+      border-radius: 15px;
+
+    }
+
+    .box:nth-child(1){
+      display: flex;
+    }
+
+    .box:nth-child(2){
+      display: flex;
+      justify-content: center;
+    }
+    .box:nth-child(3){
+      display: flex;
+      justify-content: flex-end;
+    }
+    .box:nth-child(4){
+      display: flex;
+      align-items: center;
+    }
+
+    .box:nth-child(5){
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .box:nth-child(6){
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .box:nth-child(7){
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+    }
+    .box:nth-child(8){
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .box:nth-child(9){
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  </style>
+</head>
+<body>
+
+<div id="app">
+  <div>111111111</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+</div>
+
+<div>
+
+  <div class="box">
+    <span class="item"></span>
+  </div>
+
+
+  <div class="box">
+    <span class="item"></span>
+  </div>
+
+  <div class="box">
+    <span class="item"></span>
+  </div>
+  <div class="box">
+    <span class="item"></span>
+  </div>
+  <div class="box">
+    <span class="item"></span>
+  </div>
+  <div class="box">
+    <span class="item"></span>
+  </div>
+  <div class="box">
+    <span class="item"></span>
+  </div>
+  <div class="box">
+    <span class="item"></span>
+  </div>
+  <div class="box">
+    <span class="item"></span>
+  </div>
+</div>
+
+<div>
+
+  <div class="box">
+    <span class="item"></span>
+    <span class="item"></span>
+  </div>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>
