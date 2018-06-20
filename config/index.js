@@ -7,7 +7,6 @@ const devConf = require('../config/dev.env')
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
@@ -17,13 +16,12 @@ module.exports = {
         target: "http://localhost:3000",
         pathRewrite: {"^/api" : ""}
       }
-      // context: ["/api"],
-      // target: "http://localhost:3000",
     },
 
     // Various Dev Server settings
     //host: 'localhost', // can be overwritten by process.env.HOST
     host: '192.168.4.34', // can be overwritten by process.env.HOST
+   // host: '192.168.1.114', // can be overwritten by process.env.HOST
     //host:devConf.localIp4  , // can be overwritten by process.env.HOST
     port: 80, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: true,

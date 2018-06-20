@@ -18,10 +18,6 @@ const portfinder = require('portfinder')
 const HOST =  process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
-// console.log( 'process.env:' , process.env );
-console.log( 'HOST:' , HOST );  //undefined
-console.log( 'PORT:' , PORT );  // undefined
-
 
 // console.log( 'rules:' , utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true }))
 
